@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 75%; margin: auto;">
+        <div style="float: left;">
+            Insituto Certus
+        </div>
+        <div style="float: right;">
+            Programación web - While
+        </div>
+        <div>
+            <img src="img/banner2.jpg" width="100%" alt="">
+        </div>
+        <div style="text-align: center; font-size: 25px; font-weight: bold;">
+            TABLA DE MULTIPLICAR
+        </div>
+        <div>
+            <button onclick="mostrar();">Multiplicar</button>
+        </div>
+        <div id="tabla">
+
+        </div>
+    </div>
+    <script>
+        function mostrar (){
+            //Mostrar la tabla de multiplicar
+            let xn = parseInt(prompt("Ingrese número: "));
+            a = 1
+            //Mostrar la tabla
+            while (a <= 12){
+                document.getElementById("tabla").innerHTML += (xn + " x " + a + " = " + xn*a + "<br>");
+                a += 1;
+            }
+        }
+    </script>
+</body>
+</html>
